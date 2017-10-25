@@ -1,0 +1,65 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+:root {
+  --color-main: #ccc;
+  --bg-main: #0009;
+}
+
+body {
+  font: 18px/1.2 Helvetica, Arial, sans-serif;
+  color: var(--color-main);
+  background-color: var(--bg-main);
+}
+
+#main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+}
+
+.header-part {
+  flex-basis: 33%;
+}
+
+.lives {
+  display: flex;
+  justify-content: center;
+}
+
+.lives li {
+  display: inline-block;
+}
+
+.lives li:first-child {
+  margin-left: 10px;
+}
+
+.time {
+  text-align: right;
+}
